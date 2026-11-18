@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تواصل مع بيت الكلاب للاستفسار عن الإقامة والحجز.">
+  <title>تواصل معنا | بيت الكلاب</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="بيت الكلاب - الصفحة الرئيسية"><span class="brand-icon" aria-hidden="true">🐾</span> بيت الكلاب</a>
+    <nav class="main-nav" aria-label="القائمة الرئيسية">
+      <a href="index.html">الرئيسية</a>
+      <a href="services.html">خدماتنا</a>
+      <a href="gallery.html">معرض الصور</a>
+      <a href="contact.html" aria-current="page">تواصل معنا</a>
+    </nav>
+    <div class="accessibility" aria-label="إعدادات إمكانية الوصول">
+      <button type="button" class="control-button" data-font="decrease" aria-label="تصغير حجم النص">أ−</button>
+      <button type="button" class="control-button" data-font="increase" aria-label="تكبير حجم النص">أ+</button>
+      <button type="button" class="control-button theme-toggle" aria-label="تبديل الوضع الليلي والنهاري">🌙 الوضع</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-heading">
+      <p class="eyebrow">يسعدنا أن نسمع منك</p>
+      <h1>تواصل معنا</h1>
+      <p>أرسل استفسارك، وسنكون سعداء بمساعدتك في التخطيط لإقامة كلبك.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <div class="contact-info">
+        <h2>كيف تجدنا؟</h2>
+        <p>🐾 <strong>الهاتف:</strong> <a href="tel:+966500000000">+966 50 000 0000</a></p>
+        <p>✉️ <strong>البريد:</strong> <a href="mailto:hello@doghouse.example">hello@doghouse.example</a></p>
+        <p>📍 <strong>العنوان:</strong> شارع المحبة، حي الأصدقاء</p>
+        <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=900&q=85"
+             alt="كلب سعيد يرحب بزوار بيت الكلاب">
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <h2>أرسل لنا رسالة</h2>
+        <label for="name">الاسم</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+
+        <label for="email">البريد الإلكتروني</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="subject">موضوع الرسالة</label>
+        <select id="subject" name="subject" required>
+          <option value="">اختر موضوعًا</option>
+          <option value="booking">حجز إقامة</option>
+          <option value="services">استفسار عن الخدمات</option>
+          <option value="other">موضوع آخر</option>
+        </select>
+
+        <label for="message">رسالتك</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="button" type="submit">إرسال الرسالة</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        <p class="form-hint">هذا نموذج تجريبي؛ لن تُرسل البيانات إلى خادم.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© 2026 بيت الكلاب — رعاية مليئة بالمحبة 🐾</p></footer>
+</body>
+</html>
